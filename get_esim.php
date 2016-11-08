@@ -1,7 +1,11 @@
+<?php include "valikko.php"; ?>
 <?php
-$enimi=$_GET['en'];
-$snimi=$_GET['sn'];
-echo 'yee '.$enimi.' '.$snimi;
+if(isset($_POST['btn']))
+{
+	$enimi=$_GET['en'];
+	$snimi=$_GET['sn'];
+	echo 'yee '.$enimi.' '.$snimi;
+}
 ?>
 
 <h1>Henkilötiedot</h1>
@@ -12,4 +16,4 @@ echo 'yee '.$enimi.' '.$snimi;
 <br>
 <input type="submit" name="btn" value="send">
 </FORM>
-
+<?php include "footer.php"; ?>
